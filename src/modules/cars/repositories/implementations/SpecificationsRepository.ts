@@ -1,8 +1,8 @@
-import { Specification } from "../models/Specification";
+import { Specification } from "../../models/Specification";
 import {
   ICreateSpecificationsDTO,
   ISpecifiactionsRepository,
-} from "./ISpecificationsRepository";
+} from "../ISpecificationsRepository";
 
 class SpecificationRepository implements ISpecifiactionsRepository {
   specification: Specification[];
