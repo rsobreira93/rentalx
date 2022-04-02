@@ -1,0 +1,13 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Rentalx Doucmentation",
+        "description": "Rentalx Documentation",
+        "version": "1.0.0",
+        "contact": {
+            "name": "Rentalx",
+            "url": "https://rentalx.com",
+            "email": "meu@email.com"
+        }
+    }
+}
