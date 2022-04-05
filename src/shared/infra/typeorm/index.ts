@@ -1,4 +1,4 @@
-import { createConnection, getConnectionOptions } from "typeorm";
+import { createConnection } from "typeorm";
 
 createConnection();
 

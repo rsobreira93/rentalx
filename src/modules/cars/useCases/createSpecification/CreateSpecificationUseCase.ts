@@ -1,7 +1,8 @@
-import { AppError } from "@errors/AppError";
-import { Specification } from "@modules/cars/entities/Specification";
+import { Specification } from "@modules/cars/infra/typeorm/entities/Specification";
 import { ISpecifiactionsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
 import { injectable, inject } from "tsyringe";
+
+import { AppError } from "@shared/errors/AppError";
 
 interface IRquest {
   name: string;
