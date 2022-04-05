@@ -1,4 +1,4 @@
-#Cadastro de carro
+# Cadastro de carro
 
 **RF**
 Deve ser possivel cadastrar um novo carro
@@ -10,7 +10,7 @@ Não deve ser possivel alterar a placa de um carro já cadastrado
 O carro deve ser cadastrado com disponibilidade por padrão
 Somente um adm deve ser poossivel cadastrar um carro
 
-#Listagem de carro
+# Listagem de carro
 
 **RF**
 Deve ser possivel fazer a listagem dos carros disponiveis
@@ -21,7 +21,7 @@ Deve ser possivel fazer a listagem dos carros disponiveis pelo nome do carro
 **RN**
 O usuario não precisa estar rlogado no sistema.
 
-#Cadastro de especificação no carro
+# Cadastro de especificação no carro
 
 **RF**
 Deve ser possivel cadastrar a especificação de um carro.
@@ -33,7 +33,7 @@ Só deve ser possivel cadastrar uma especificação se o carro estiver cadastrad
 Não deve ser possivel cadastar uma especificação já existente para o msm carro.
 Uma especificação só pode ser salva por um adm.
 
-#Cadastro de imagens do carro
+# Cadastro de imagens do carro
 
 **RF**
 Deve ser possivel cadastrar a imagem do carro
