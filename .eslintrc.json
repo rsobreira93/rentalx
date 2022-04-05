@@ -74,7 +74,8 @@
             "error",
             {
                 "devDependencies": [
-                    "**/*.spec.js"
+                    "**/*.spec.ts",
+                    "jest.config.ts"
                 ]
             }
         ]
