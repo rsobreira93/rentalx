@@ -17,7 +17,7 @@ describe("Create Car", () => {
     await createCarUseCase.execute({
       brand: "Brand",
       category_id: "catetgory",
-      daily_rate: 100,
+      dayly_rate: 100,
       description: "Carro de teste",
       fine_amount: 60,
       license_plate: "ABC-1234",
@@ -29,7 +29,7 @@ describe("Create Car", () => {
     await createCarUseCase.execute({
       brand: "Brand",
       category_id: "catetgory",
-      daily_rate: 100,
+      dayly_rate: 100,
       description: "Carro de teste",
       fine_amount: 60,
       license_plate: "ABC-1234",
@@ -40,7 +40,7 @@ describe("Create Car", () => {
       createCarUseCase.execute({
         brand: "Brand",
         category_id: "catetgory",
-        daily_rate: 100,
+        dayly_rate: 100,
         description: "Carro de teste",
         fine_amount: 60,
         license_plate: "ABC-1234",
@@ -53,7 +53,7 @@ describe("Create Car", () => {
     const car = await createCarUseCase.execute({
       brand: "Brand",
       category_id: "catetgory",
-      daily_rate: 100,
+      dayly_rate: 100,
       description: "Carro de teste",
       fine_amount: 60,
       license_plate: "ABCD-1234",
