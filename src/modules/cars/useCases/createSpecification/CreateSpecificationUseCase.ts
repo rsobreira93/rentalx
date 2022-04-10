@@ -1,5 +1,5 @@
 import { Specification } from "@modules/cars/infra/typeorm/entities/Specification";
-import { ISpecifiactionsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
+import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
 import { injectable, inject } from "tsyringe";
 
 import { AppError } from "@shared/errors/AppError";
@@ -13,7 +13,7 @@ interface IRquest {
 class CreateSpecificationUseCase {
   constructor(
     @inject("SpecificationsRepository")
-    private specifications: ISpecifiactionsRepository
+    private specifications: ISpecificationsRepository
   ) {}
 
   async execute({ description, name }: IRquest): Promise<Specification> {
