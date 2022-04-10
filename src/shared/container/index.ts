@@ -5,7 +5,7 @@ import { CategoriesRepository } from "@modules/cars/infra/typeorm/repositories/C
 import { SpecificationRepository } from "@modules/cars/infra/typeorm/repositories/SpecificationsRepository";
 import { ICarRepository } from "@modules/cars/repositories/ICarsRepository";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
-import { ISpecifiactionsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
+import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
 import { container } from "tsyringe";
 
 container.registerSingleton<ICategoriesRepository>(
@@ -13,7 +13,7 @@ container.registerSingleton<ICategoriesRepository>(
   CategoriesRepository
 );
 
-container.registerSingleton<ISpecifiactionsRepository>(
+container.registerSingleton<ISpecificationsRepository>(
   "SpecificationsRepository",
   SpecificationRepository
 );
