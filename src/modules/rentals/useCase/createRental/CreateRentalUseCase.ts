@@ -1,3 +1,4 @@
+import { ICarRepository } from "@modules/cars/repositories/ICarsRepository";
 import { inject, injectable } from "tsyringe";
 
 import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
@@ -19,7 +20,10 @@ class CreateRentalUseCase {
     private dateProvider: IDateProvider,
 
     @inject("RentalsRepository")
-    private rentalsRepository: IRentalsRepository
+    private rentalsRepository: IRentalsRepository,
+
+    @inject("CarsRepository")
+    private carsRepository: ICarRepository
   ) {}
 
   async execute({
@@ -60,6 +64,8 @@ class CreateRentalUseCase {
       user_id,
       expected_return_date,
     });
+
+    await this.carsRepository.updateAvailable(car_id, false);
 
     return rental;
   }
