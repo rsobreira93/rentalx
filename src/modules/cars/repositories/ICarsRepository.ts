@@ -11,6 +11,7 @@ interface ICarRepository {
     name?: string
   ): Promise<Car[]>;
   findById(car_id: string): Promise<Car | undefined>;
+  updateAvailable(id: string, available: boolean): Promise<void>;
 }
 
 export { ICarRepository };
