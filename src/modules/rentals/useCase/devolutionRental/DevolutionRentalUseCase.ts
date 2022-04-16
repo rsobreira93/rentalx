@@ -20,7 +20,7 @@ class DevolutionRentalUseCase {
     @inject("CarsRepository")
     private carsRepository: ICarRepository,
 
-    @inject("DayjsDateProvider")
+    @inject("DayjsDataProvider")
     private dateProvider: IDateProvider
   ) {}
 
@@ -45,8 +45,8 @@ class DevolutionRentalUseCase {
     }
 
     const delay = this.dateProvider.compareInDays(
-      dateNow,
-      rental.expected_return_date
+      rental.expected_return_date,
+      dateNow
     );
 
     let total = 0;
@@ -63,7 +63,7 @@ class DevolutionRentalUseCase {
 
     await this.rentalsRepository.create(rental);
 
-    await this.carsRepository.updateAvailable(car.id, true);
+    await this.carsRepository.updateAvailable(rental.car_id, true);
 
     return rental;
   }

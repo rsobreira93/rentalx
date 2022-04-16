@@ -82,7 +82,8 @@ class CarsRepository implements ICarRepository {
       .createQueryBuilder()
       .update()
       .set({ avaliable: available })
-      .where("id = :id", { id })
+      .where("id = :id")
+      .setParameters({ id })
       .execute();
   }
 }
