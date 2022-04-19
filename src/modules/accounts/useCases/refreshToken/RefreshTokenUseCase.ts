@@ -17,9 +17,10 @@ class RefreshTokenUseCase {
     @inject("UsersTokensRepository")
     private usersTokensRepository: IUsersTokensRepository,
 
-    @inject("DayjsDateProvider")
+    @inject("DayjsDataProvider")
     private dateProvider: IDateProvider
   ) {}
+
   async execute(token: string): Promise<string> {
     const { email, sub } = verify(token, auth.secret_refresh_token) as IPayload;
 
