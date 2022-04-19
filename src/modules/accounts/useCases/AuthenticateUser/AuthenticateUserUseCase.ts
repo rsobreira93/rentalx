@@ -32,7 +32,7 @@ class AuthenticateUserUseCase {
     @inject("UsersTokensRepository")
     private usersTokensRepository: IUsersTokensRepository,
 
-    @inject("DayjsDateProvider")
+    @inject("DayjsDataProvider")
     private dateProvider: IDateProvider
   ) {}
   async execute({ email, password }: IRquest): Promise<IResponse> {
