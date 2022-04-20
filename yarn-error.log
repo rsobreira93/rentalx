@@ -1,5 +1,5 @@
 Arguments: 
-  /home/romulo/.nvm/versions/node/v14.18.1/bin/node /usr/local/bin/yarn add nodemiler
+  /home/romulo/.nvm/versions/node/v14.18.1/bin/node /usr/local/bin/yarn add -D @types/nodemiler
 
 PATH: 
   /home/romulo/.nvm/versions/node/v14.18.1/bin:/home/romulo/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/romulo/.fzf/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/nodemiler: Not found
+  Error: https://registry.yarnpkg.com/@types%2fnodemiler: Not found
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66992:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140763:22)
       at Request.emit (events.js:400:28)
