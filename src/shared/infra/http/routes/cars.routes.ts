@@ -9,7 +9,7 @@ import multer from "multer";
 import { ensureAdmin } from "@shared/infra/http/middlewares/ensureAdmin";
 import { ensureAuthenticated } from "@shared/infra/http/middlewares/ensureAthenticated";
 
-const uploadCarImages = multer(uploadConfig.upload("./tmp/cars"));
+const uploadCarImages = multer(uploadConfig);
 
 const carsRoutes = Router();
 const carsController = new CreateCarController();
